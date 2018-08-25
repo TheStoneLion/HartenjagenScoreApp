@@ -59,23 +59,23 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0" Margin="0 0 8 0">
-                    <TextBox x:Name="RondeScoreNaamSpeler1" Text="Speler1" />
-                    <TextBox x:Name="RondeScoreWaardeSpeler1"  TextChanged="RondeScoreWaardeSpeler1_DataContextChanged" Padding="2" PreviewTextInput="RondeScoreWaardeSpeler1_PreviewTextInput"/>
+                    <TextBox x:Name="RondeScoreNaamSpeler1" TextChanged="RondeScoreNaamSpeler1_TextChanged" Text="Speler1" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler1" TextChanged="RondeScoreWaardeSpeler1_TextChanged" Padding="2" PreviewTextInput="RondeScoreWaardeSpeler1_PreviewTextInput"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1" Margin="4 0 6 0">
-                    <TextBox x:Name="RondeScoreNaamSpeler2" Text="Speler2" />
-                    <TextBox x:Name="RondeScoreWaardeSpeler2" TextChanged="RondeScoreWaardeSpeler2_DataContextChanged" Padding="2"/>
+                    <TextBox x:Name="RondeScoreNaamSpeler2" TextChanged="RondeScoreNaamSpeler2_TextChanged" Text="Speler2" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler2" TextChanged="RondeScoreWaardeSpeler2_TextChanged" Padding="2"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2" Margin="6 0 4 0">
-                    <TextBox x:Name="RondeScoreNaamSpeler3" Text="Speler3" />
-                    <TextBox x:Name="RondeScoreWaardeSpeler3" TextChanged="RondeScoreWaardeSpeler3_DataContextChanged" Padding="2"/>
+                    <TextBox x:Name="RondeScoreNaamSpeler3" TextChanged="RondeScoreNaamSpeler3_TextChanged" Text="Speler3" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler3" TextChanged="RondeScoreWaardeSpeler3_TextChanged" Padding="2"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="3" Margin="8 0 0 0">
-                    <TextBox x:Name="RondeScoreNaamSpeler4" Text="Speler4" />
-                    <TextBox x:Name="RondeScoreWaardeSpeler4" TextChanged="RondeScoreWaardeSpeler4_DataContextChanged" Padding="2"/>
+                    <TextBox x:Name="RondeScoreNaamSpeler4" TextChanged="RondeScoreNaamSpeler4_TextChanged" Text="Speler4" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler4" TextChanged="RondeScoreWaardeSpeler4_TextChanged" Padding="2"/>
                 </StackPanel>
             </Grid>
 
