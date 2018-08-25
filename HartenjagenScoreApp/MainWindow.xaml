@@ -6,7 +6,113 @@
         xmlns:local="clr-namespace:HartenjagenScoreApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    
+    <Border Padding="10">
+        <StackPanel>
+
+        <!-- Buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ProcessRoundButton" Click="ProcessRoundButton_Click" Margin="0 0 8 0" Grid.Column="0" Content="Verwerk Ronde" />
+                <Button x:Name="DeleteLastRoundButton" Click="DeleteLastRoundButton_Click" Margin="4 0 4 0" Grid.Column="1" Content="Ronde verwijderen" />
+                <Button x:Name="StartGameButton" Click="StartGameButton_Click" Margin="8 0 0 0" Grid.Column="2" Content="Nieuw spel opstarten" />
+            </Grid>
+
+        <!-- Spel informatie -->
+            <TextBlock Text="Spel informatie" FontWeight="bold" Margin="0 10 0 0"/>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            
+                <StackPanel Grid.Column="0" Margin="0 0 8 0">
+                    <TextBlock Text="Rest" />
+                    <TextBox x:Name="SpelInfoRest" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="4 0 4 0">
+                    <TextBlock Text="Draaipunt" />
+                    <TextBox x:Name="SpelInfoDraaipunt" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Margin="8 0 0 0">
+                    <TextBlock Text="Spelfase" />
+                    <TextBox x:Name="SpelInfoSpelfase" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+            </Grid>
+            
+            <TextBlock Text="Ronde score" FontWeight="bold" Margin="0 10 0 0"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0 0 8 0">
+                    <TextBlock x:Name="RondeScoreNaamSpeler1" Text="Speler1" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler1" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="4 0 4 0">
+                    <TextBlock x:Name="RondeScoreNaamSpeler2" Text="Speler2" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler2" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Margin="4 0 4 0">
+                    <TextBlock x:Name="RondeScoreNaamSpeler3" Text="Speler3" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler3" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="3" Margin="8 0 0 0">
+                    <TextBlock x:Name="RondeScoreNaamSpeler4" Text="Speler4" />
+                    <TextBox x:Name="RondeScoreWaardeSpeler4" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Text="Stand" FontWeight="bold" Margin="0 10 0 0"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0 0 8 0">
+                    <TextBlock x:Name="StandNaamSpeler1" Text="Speler1" />
+                    <TextBox x:Name="StandWaardeSpeler1" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="4 0 4 0">
+                    <TextBlock x:Name="StandNaamSpeler2" Text="Speler2" />
+                    <TextBox x:Name="StandWaardeSpeler2" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Margin="4 0 4 0">
+                    <TextBlock x:Name="StandNaamSpeler3" Text="Speler3" />
+                    <TextBox x:Name="StandWaardeSpeler3" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="3" Margin="8 0 0 0">
+                    <TextBlock x:Name="StandNaamSpeler4" Text="Speler4" />
+                    <TextBox x:Name="StandWaardeSpeler4" IsReadOnly="True" Background="#eee" Padding="2"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Text="Ronde Overzicht" FontWeight="bold" Margin="0 10 0 0"/>
+
+        </StackPanel>
+    </Border>
+
 </Window>
