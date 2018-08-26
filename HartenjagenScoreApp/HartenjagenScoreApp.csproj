@@ -55,8 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Hartenjagen.cs" />
-    <Compile Include="Speler.cs" />
+    <Compile Include="Classes\Hartenjagen.cs" />
+    <Compile Include="Classes\Ronde.cs" />
+    <Compile Include="Classes\Speler.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
